@@ -24,9 +24,9 @@ logger = logging.getLogger(__name__)
 
 # Configuration with environment variables
 class Config:
-    NEWS_API_KEY = os.getenv("NEWS_API_KEY", "660e0e2836b845b2a62b5fa69d847ddb")
-    GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "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")
-    YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "AIzaSyBiK-l9worbHDQu5wCP3GHSDqV4qEOcB0k")
+    NEWS_API_KEY = os.getenv("NEWS_API_KEY", "YOUR_API")
+    GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "YOUR_API")
+    YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "YOUR_ENDPOINT")
     UPDATE_INTERVAL = int(os.getenv("UPDATE_INTERVAL", 3600))  # 1 hour
     MAX_WORKERS = int(os.getenv("MAX_WORKERS", 5))
     CACHE_SIZE = int(os.getenv("CACHE_SIZE", 500))
